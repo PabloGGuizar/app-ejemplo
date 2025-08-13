@@ -1,0 +1,44 @@
+/* index.css */
+:root {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[data-theme='light'] {
+  --primary-color: #ec4899;      /* Pink */
+  --accent-color: #38bdf8;       /* Blue */
+  --background-color: #fef3c7;   /* Pale Yellow */
+  --text-color: #78350f;         /* Brown */
+  --surface-color: #ffffff;      /* White for cards/buttons */
+  --correct-color: #22c55e;      /* Green */
+  --incorrect-color: #ef4444;    /* Red */
+  --shadow-color: rgba(120, 53, 15, 0.1);
+}
+
+[data-theme='dark'] {
+  --primary-color: #ec4899;      /* Pink */
+  --accent-color: #38bdf8;       /* Blue */
+  --background-color: #1e293b;   /* Slate Gray/Blue */
+  --text-color: #f1f5f9;         /* Off-white */
+  --surface-color: #334155;      /* Darker Slate for cards */
+  --correct-color: #4ade80;      /* Lighter Green */
+  --incorrect-color: #f87171;    /* Lighter Red */
+  --shadow-color: rgba(0, 0, 0, 0.2);
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}

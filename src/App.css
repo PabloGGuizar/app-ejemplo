@@ -1,0 +1,296 @@
+/* App.css */
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  width: 100%;
+}
+
+.quiz-wrapper {
+  max-width: 520px; /* Comfortable density */
+  margin: 2rem auto;
+  padding: 2.5rem;
+  background-color: var(--surface-color);
+  border-radius: 24px; /* Very rounded */
+  box-shadow: 0 8px 16px var(--shadow-color);
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+}
+
+.quiz-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.quiz-header h1, .quiz-header h2 {
+  font-size: 1.5rem; /* Adjusted for new style */
+  font-weight: 700;
+  color: var(--primary-color);
+  margin: 0;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--text-color);
+  cursor: pointer;
+  padding: 0 1rem 0 0;
+}
+
+/* Lives & Hearts */
+.lives-container {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.heart {
+  color: var(--primary-color);
+  margin-left: 0.25rem;
+  animation: heartbeat 1.5s infinite;
+}
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+}
+
+/* ProgressBar */
+.progress-bar-container {
+  width: 100%;
+  height: 16px;
+  background-color: var(--background-color);
+  border-radius: 16px;
+  margin-bottom: 2.5rem;
+  overflow: hidden;
+}
+.progress-bar {
+  height: 100%;
+  background-color: var(--accent-color);
+  border-radius: 16px;
+  transition: width 0.4s ease-in-out;
+}
+
+/* Quiz Container */
+.question-text {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 2.5rem;
+  min-height: 50px;
+}
+
+.options-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.option-button, .correct, .incorrect, .correct-unselected {
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 16px; /* Very rounded */
+  border: 2px solid var(--background-color);
+  background-color: var(--surface-color);
+  color: var(--text-color);
+  cursor: pointer;
+  box-shadow: 0 4px 8px var(--shadow-color);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.option-button:hover:not(:disabled) {
+  transform: scale(1.05); /* Slight growth on hover */
+  box-shadow: 0 6px 12px var(--shadow-color);
+  border-color: var(--accent-color);
+}
+
+.correct, .correct:hover {
+  background-color: var(--correct-color);
+  color: white;
+  border-color: var(--correct-color);
+  transform: scale(1.05);
+}
+
+.incorrect, .incorrect:hover {
+  background-color: var(--incorrect-color);
+  color: white;
+  border-color: var(--incorrect-color);
+  transform: scale(1.05);
+}
+
+.correct-unselected {
+  background-color: var(--surface-color);
+  border-color: var(--correct-color);
+  opacity: 0.8;
+}
+
+.option-button:disabled {
+  cursor: not-allowed;
+}
+
+/* Results */
+.results-container h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+.results-container .score {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin: 1rem 0;
+}
+.results-container button {
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: 16px;
+  border: none;
+  background-color: var(--primary-color);
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 4px 8px var(--shadow-color);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.results-container button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px var(--shadow-color);
+}
+
+/* FeedbackModal */
+.modal-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.feedback-modal {
+  padding: 2rem 4rem;
+  border-radius: 24px;
+  color: white;
+  text-align: center;
+  font-weight: 700;
+}
+.feedback-modal.correct { background-color: var(--correct-color); }
+.feedback-modal.incorrect { background-color: var(--incorrect-color); }
+.feedback-modal h2 { margin: 0; font-size: 1.8rem; }
+
+/* ThemeSwitcher */
+.theme-switcher {
+  position: fixed; /* Changed from absolute */
+  top: 1rem;
+  right: 1rem;
+  padding: 0.5rem;
+  background-color: var(--surface-color);
+  border: 2px solid var(--background-color);
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  line-height: 1;
+  z-index: 2000; /* Ensure it's on top */
+  box-shadow: 0 2px 4px var(--shadow-color);
+  transition: transform 0.2s ease;
+}
+.theme-switcher:hover {
+  transform: scale(1.1);
+}
+
+/* Dashboard */
+.dashboard {
+  width: 100%;
+  max-width: 800px;
+}
+
+.dashboard-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.quiz-card {
+  background-color: var(--surface-color);
+  border-radius: 24px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 16px var(--shadow-color);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+  border: 2px solid transparent;
+}
+
+.quiz-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px var(--shadow-color);
+  border-color: var(--accent-color);
+}
+
+.quiz-card.locked {
+  background-color: var(--background-color);
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.quiz-card.locked:hover {
+  transform: none;
+  box-shadow: 0 8px 16px var(--shadow-color);
+  border-color: transparent;
+}
+
+.quiz-card-level {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--accent-color);
+  margin-bottom: 0.5rem;
+}
+
+.quiz-card-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.lock-icon {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  font-size: 1.5rem;
+  opacity: 0.5;
+}
+
+.achievement-icon {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  font-size: 1.8rem;
+  animation: bounce 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes bounce {
+  0% { transform: translateY(-50px); animation-timing-function: ease-in; opacity: 0; }
+  38% { transform: translateY(0); animation-timing-function: ease-out; opacity: 1; }
+  55% { transform: translateY(-25px); animation-timing-function: ease-in; }
+  72% { transform: translateY(0); animation-timing-function: ease-out; }
+  81% { transform: translateY(-10px); animation-timing-function: ease-in; }
+  90% { transform: translateY(0); animation-timing-function: ease-out; }
+  95% { transform: translateY(-4px); animation-timing-function: ease-in; }
+  100% { transform: translateY(0); animation-timing-function: ease-out; }
+}
