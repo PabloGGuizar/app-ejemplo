@@ -1,12 +1,46 @@
-# React + Vite
+# Maestría en Conectores
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+¡Bienvenido a Maestría en Conectores! Una aplicación web interactiva diseñada para ayudarte a mejorar tu dominio de los conectores del español a través de una serie de quizzes progresivos.
 
-Currently, two official plugins are available:
+## ✨ Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Puedes probar la aplicación en vivo aquí: **[https://pablogguizar.github.io/app-ejemplo/](https://pablogguizar.github.io/app-ejemplo/)**
 
-## Expanding the ESLint configuration
+## 🚀 Características
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Quizzes Progresivos:** Desbloquea nuevos niveles a medida que completas los anteriores.
+- **Contenido Específico:** Cada nivel se enfoca en un tipo diferente de conector (Aditivos, Reformulativos, Argumentativos).
+- **Sistema de Vidas:** ¡Tienes 3 vidas para superar cada quiz! Si las pierdes, deberás intentarlo de nuevo.
+- **Recompensas Visuales:** Gana medallas (🏅) por cada nivel completado y un trofeo (🏆) al conquistar el último desafío.
+- **Selector de Tema:** Personaliza tu experiencia con un selector de tema que incluye modos claro, oscuro y de sistema (💻/☀️/🌙).
+- **Diseño Moderno:** Una interfaz amigable y juguetona construida con React y Vite.
+
+## 🛠️ Cómo Ejecutar Localmente
+
+Si deseas ejecutar este proyecto en tu propia máquina, sigue estos pasos:
+
+1.  **Clona el repositorio:**
+    ```bash
+    git clone https://github.com/PabloGGuizar/app-ejemplo.git
+    cd app-ejemplo
+    ```
+
+2.  **Instala las dependencias:**
+    ```bash
+    npm install
+    ```
+
+3.  **Inicia el servidor de desarrollo:**
+    ```bash
+    npm run dev
+    ```
+
+¡Y listo! La aplicación debería estar corriendo en `http://localhost:5173` (o el puerto que indique Vite).
+
+## 🔧 Despliegue
+
+Este proyecto utiliza `gh-pages` para un despliegue sencillo en GitHub Pages. Para desplegar tu propia versión, asegúrate de configurar el campo `homepage` en tu `package.json` y luego ejecuta:
+
+```bash
+npm run deploy
+```
