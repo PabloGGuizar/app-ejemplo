@@ -1,0 +1,173 @@
+[
+  {
+    "id": "q1",
+    "title": "Conectores Aditivos",
+    "level": 1,
+    "questions": [
+      {
+        "id": "q1-1",
+        "text": "Es inteligente, guapo _____, además, muy simpático.",
+        "options": [
+          { "id": 1, "text": "y", "isCorrect": true },
+          { "id": 2, "text": "pero", "isCorrect": false },
+          { "id": 3, "text": "o sea", "isCorrect": false },
+          { "id": 4, "text": "porque", "isCorrect": false }
+        ]
+      },
+      {
+        "id": "q1-2",
+        "text": "No solo terminó su tarea, ____ que ayudó a su hermano.",
+        "options": [
+          { "id": 1, "text": "asimismo", "isCorrect": false },
+          { "id": 2, "text": "sino también", "isCorrect": true },
+          { "id": 3, "text": "aun así", "isCorrect": false },
+          { "id": 4, "text": "por eso", "isCorrect": false }
+        ]
+      },
+      {
+        "id": "q1-3",
+        "text": "Me encanta el chocolate. _____, me fascina el helado.",
+        "options": [
+          { "id": 1, "text": "Asimismo", "isCorrect": true },
+          { "id": 2, "text": "En cambio", "isCorrect": false },
+          { "id": 3, "text": "No obstante", "isCorrect": false },
+          { "id": 4, "text": "Mejor dicho", "isCorrect": false }
+        ]
+      },
+      {
+        "id": "q1-4",
+        "text": "Todos deben traer su libro, _____, su cuaderno de apuntes.",
+        "options": [
+          { "id": 1, "text": "es decir", "isCorrect": false },
+          { "id": 2, "text": "por añadidura", "isCorrect": true },
+          { "id": 3, "text": "sin embargo", "isCorrect": false },
+          { "id": 4, "text": "por lo tanto", "isCorrect": false }
+        ]
+      },
+      {
+        "id": "q1-5",
+        "text": "Hacía mucho frío, e _____, comenzó a nevar.",
+        "options": [
+          { "id": 1, "text": "incluso", "isCorrect": true },
+          { "id": 2, "text": "así que", "isCorrect": false },
+          { "id": 3, "text": "de ahí que", "isCorrect": false },
+          { "id": 4, "text": "pero", "isCorrect": false }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "q2",
+    "title": "Conectores Reformulativos",
+    "level": 2,
+    "questions": [
+      {
+        "id": "q2-1",
+        "text": "No consiguió el trabajo; _____, no pasó la entrevista final.",
+        "options": [
+          { "id": 1, "text": "además", "isCorrect": false },
+          { "id": 2, "text": "mejor dicho", "isCorrect": true },
+          { "id": 3, "text": "aun así", "isCorrect": false },
+          { "id": 4, "text": "asimismo", "isCorrect": false }
+        ]
+      },
+      {
+        "id": "q2-2",
+        "text": "La empresa tuvo grandes ganancias, ____, fue un año excelente.",
+        "options": [
+          { "id": 1, "text": "en otras palabras", "isCorrect": true },
+          { "id": 2, "text": "no obstante", "isCorrect": false },
+          { "id": 3, "text": "y", "isCorrect": false },
+          { "id": 4, "text": "por ende", "isCorrect": false }
+        ]
+      },
+      {
+        "id": "q2-3",
+        "text": "El sistema es muy complejo, ____, difícil de entender para los principiantes.",
+        "options": [
+          { "id": 1, "text": "es decir", "isCorrect": true },
+          { "id": 2, "text": "por consiguiente", "isCorrect": false },
+          { "id": 3, "text": "así pues", "isCorrect": false },
+          { "id": 4, "text": "también", "isCorrect": false }
+        ]
+      },
+      {
+        "id": "q2-4",
+        "text": "Se canceló el vuelo. _____, nos quedaremos en el hotel un día más.",
+        "options": [
+          { "id": 1, "text": "Dicho de otro modo", "isCorrect": false },
+          { "id": 2, "text": "En resumen", "isCorrect": false },
+          { "id": 3, "text": "O sea", "isCorrect": true },
+          { "id": 4, "text": "Encima", "isCorrect": false }
+        ]
+      },
+      {
+        "id": "q2-5",
+        "text": "El autor presenta varias ideas; _____, resume su tesis principal en el último capítulo.",
+        "options": [
+          { "id": 1, "text": "en suma", "isCorrect": true },
+          { "id": 2, "text": "por añadidura", "isCorrect": false },
+          { "id": 3, "text": "incluso", "isCorrect": false },
+          { "id": 4, "text": "además", "isCorrect": false }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "q3",
+    "title": "Conectores Argumentativos",
+    "level": 3,
+    "questions": [
+      {
+        "id": "q3-1",
+        "text": "Hacía buen tiempo, _____, decidimos no ir a la playa.",
+        "options": [
+          { "id": 1, "text": "por eso", "isCorrect": false },
+          { "id": 2, "text": "sin embargo", "isCorrect": true },
+          { "id": 3, "text": "entonces", "isCorrect": false },
+          { "id": 4, "text": "ya que", "isCorrect": false }
+        ]
+      },
+      {
+        "id": "q3-2",
+        "text": "No estudió nada, _____, suspendió el examen.",
+        "options": [
+          { "id": 1, "text": "por lo tanto", "isCorrect": true },
+          { "id": 2, "text": "aunque", "isCorrect": false },
+          { "id": 3, "text": "a pesar de", "isCorrect": false },
+          { "id": 4, "text": "aun así", "isCorrect": false }
+        ]
+      },
+      {
+        "id": "q3-3",
+        "text": "Me encanta el cine; _____, mi hermano prefiere el teatro.",
+        "options": [
+          { "id": 1, "text": "en cambio", "isCorrect": true },
+          { "id": 2, "text": "así que", "isCorrect": false },
+          { "id": 3, "text": "además", "isCorrect": false },
+          { "id": 4, "text": "también", "isCorrect": false }
+        ]
+      },
+      {
+        "id": "q3-4",
+        "text": "El coche es caro. _____, gasta mucha gasolina.",
+        "options": [
+          { "id": 1, "text": "Por si fuera poco", "isCorrect": true },
+          { "id": 2, "text": "En resumen", "isCorrect": false },
+          { "id": 3, "text": "O sea", "isCorrect": false },
+          { "id": 4, "text": "Mejor dicho", "isCorrect": false }
+        ]
+      },
+      {
+        "id": "q3-5",
+        "text": "Llovió durante todo el día. _____, el río se desbordó.",
+        "options": [
+          { "id": 1, "text": "No obstante", "isCorrect": false },
+          { "id": 2, "text": "En consecuencia", "isCorrect": true },
+          { "id": 3, "text": "Por el contrario", "isCorrect": false },
+          { "id": 4, "text": "Aun así", "isCorrect": false }
+        ]
+      }
+    ]
+  }
+]
