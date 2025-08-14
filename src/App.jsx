@@ -14,7 +14,7 @@ function App() {
   );
 
   useEffect(() => {
-    fetch('/quizzes.json')
+    fetch(`${import.meta.env.BASE_URL}quizzes.json`)
       .then(res => res.json())
       .then(data => {
         setQuizzes(data);
